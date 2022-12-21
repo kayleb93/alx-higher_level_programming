@@ -14,11 +14,11 @@ class Node:
             next_node (Node): The next node of the new Node.
         """
         self.data = data
-        self.next_node =next_node
+        self.next_node = next_node
 
     @property
     def data(self):
-        """Get/set the data of teh Node."""
+        """Get/set the data of the Node."""
         return (self.__data)
 
     @data.setter
