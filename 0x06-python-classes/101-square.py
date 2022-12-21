@@ -1,10 +1,23 @@
 #!/usr/bin/python3
-Square = __import__('101-square').Square
+"""Define a class Square."""
 
-my_square = Square(5, (0, 0))
-print(my_square)
 
-print("--")
+class Square:
+    """Represent a square."""
 
-my_square = Square(5, (4, 1))
-print(my_square)
+    def __init__(self, size=0, position=(0, 0)):
+        """Initialize a new square.
+        Args:
+            size (int): The size of the new square.
+            position (int, int): The position of the new square.
+        """
+        self.size = size
+        self.position = position
+
+    @property
+    def size(self):
+        """Get/set the current size of the square."""
+        return (self.__size)
+
+    @size.setter
+    def size(self, value):
